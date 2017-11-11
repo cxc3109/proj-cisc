@@ -1,5 +1,5 @@
 u = 0.5;
-M = 12345;
+M = 12345; # 12345 is the number of experiment??  
 
 for evalfun = 1:10
 	str = sprintf('Evaluating function #%d:', evalfun);
@@ -11,7 +11,7 @@ for evalfun = 1:10
 	end
 end
 
-function p = experiment(N, M, genfun, evalfun)
+function p = experiment(N, M, genfun, evalfun) ## is this for calculation p-value? 
 	cnt = 0;
 	for m = 1:M
 		x = [];
